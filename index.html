@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HurRim</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <script src="js/splitting.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+            rel="stylesheet"
+        />
+
+        <!-- font-family: "Changa One", sans-serif; -->
+        <!-- font-family: 'NanumSquare'; -->
+    </head>
+    <body>
+        <header>
+            <ul class="butt">
+                <li>
+                    <h1>
+                        <a href="index.html"
+                            ><img class="logos" src="img/logo.svg"
+                        /></a>
+                    </h1>
+                </li>
+                <li>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <span class="s_circl"></span>
+                                    <span class="menu_txt">About</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <span class="s_circl"></span>
+                                    <span class="menu_txt"> Portfolio </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <span class="s_circl"></span>
+                                    <span class="menu_txt"> Contact </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <ul class="navi">
+            <li>
+                <div class="n_box col_on">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <span>Home</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                </div>
+                <span>About</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <span>Homepage01</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <span>Homepage02</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <span>Homepage03</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <span>Illustration</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span>Animation</span>
+            </li>
+            <li>
+                <div class="n_box">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <span>Contact</span>
+            </li>
+        </ul>
+        <div id="container">
+            <section class="page1">
+                <ul class="panel">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="p_box">
+                    <div class="bg_col"></div>
+                    <video src="img/visual02.mov" autoplay loop muted></video>
+                    <div class="b_sqr1"></div>
+                    <h3 class="wp">WEBPUBLISHER</h3>
+                    <h2 class="name">HURRIM</h2>
+                </div>
+            </section>
+            <section class="page2">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_yellw">About</h2>
+                    <img class="icon2" src="img/icon2.svg" />
+                </div>
+                <ul class="p2txt_wrap">
+                    <li>
+                        <div class="bg_txt">
+                            <div class="bg_cirl"></div>
+                            <img class="face" src="img/faceimg.jpg" />
+                        </div>
+                    </li>
+                    <li class="resume">
+                        <h2>허 림 <span>90. 12. 12</span></h2>
+
+                        <h3>경력사항</h3>
+                        <p>
+                            2021. 01 - 2024. 01
+                            <span>프리랜서 활동 (3D 애니메이터)</span>
+                        </p>
+                        <p>
+                            2017. 04 - 2020. 08
+                            <span>토이온 (3D 애니메이터)</span>
+                        </p>
+                        <p>
+                            2015. 07 - 2016. 11
+                            <span>씨지픽셀스튜디오 (3D 애니메이터)</span>
+                        </p>
+                        <h3>학력사항</h3>
+                        <p>
+                            2024. 07 - 2024. 12
+                            <span>MBC 아카데미 웹디자인&웹퍼블리셔 수료</span>
+                        </p>
+                        <p>
+                            2017. 03 - 2020. 08
+                            <span>경희사이버대학교 시각미디어디자인 졸업</span>
+                        </p>
+                        <p>
+                            2010. 04 - 2012. 04
+                            <span
+                                >일본전자전문학교 고도컴퓨터그래픽스 수료</span
+                            >
+                        </p>
+                    </li>
+                </ul>
+                <div class="skill_wrap">
+                    <h3>Skill</h3>
+                    <ul class="ability">
+                        <li>
+                            <div class="a_txt">
+                                <p>html</p>
+                                <p class="percent">
+                                    <span class="number1">90</span>%
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a_txt">
+                                <p>css</p>
+                                <p class="percent">
+                                    <span class="number2">85</span>%
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a_txt">
+                                <p>jQ</p>
+                                <p class="percent">
+                                    <span class="number3">80</span>%
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a_txt">
+                                <p>jss</p>
+                                <p class="percent">
+                                    <span class="number4">70</span>%
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a_txt">
+                                <p>Ps</p>
+                                <p class="percent">
+                                    <span class="number5">85</span>%
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a_txt">
+                                <p>Ai</p>
+                                <p class="percent">
+                                    <span class="number6">75</span>%
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page3">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_blu">Homepage</h2>
+                    <img class="ico" src="img/icon3-2.svg" />
+                </div>
+                <ul class="hpage">
+                    <li class="more">
+                        <img class="mock" src="img/mockup01.png" />
+                        <div class="pg_txt">
+                            <h3 class="hm">홈페이지 제목</h3>
+                            <p class="descript">
+                                유저의 사용에 친화적이고 감각적인 느낌으로
+                                리노베이션 했습니다. 메인 페이지를 소개하고 그에
+                                맞는 상품을 홍보합니다.
+                            </p>
+                        </div>
+                        <ul class="more_butt">
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        기획서보기
+                                    </div>
+                                    <div class="txt_circle"></div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        홈페이지
+                                    </div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                    <div class="txt_circle"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="comein">
+                        <img src="img/homepage01.jpg" />
+                        <div class="p3_box box_sz"></div>
+                    </li>
+                </ul>
+            </section>
+            <section class="page4">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_yellw">Homepage</h2>
+                    <img class="ico" src="img/icon3.svg" />
+                </div>
+                <ul class="homepage2 hpage">
+                    <li class="more">
+                        <img class="mock" src="img/mockup01.png" />
+                        <div class="pg_txt">
+                            <h3 class="hm">홈페이지 제목</h3>
+                            <p class="descript">
+                                유저의 사용에 친화적이고 감각적인 느낌으로
+                                리노베이션 했습니다. 메인 페이지를 소개하고 그에
+                                맞는 상품을 홍보합니다.
+                            </p>
+                        </div>
+                        <ul class="more_butt">
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        기획서보기
+                                    </div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                    <div class="txt_circle col_oran"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        홈페이지
+                                    </div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                    <div class="txt_circle col_oran"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="comein">
+                        <img src="img/homepage01.jpg" />
+                        <div class="p4_box"></div>
+                    </li>
+                </ul>
+            </section>
+            <section class="page5">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_blu">Homepage</h2>
+                    <img class="ico" src="img/icon3-2.svg" />
+                </div>
+                <ul class="hpage">
+                    <li class="more">
+                        <img class="mock" src="img/mockup01.png" />
+                        <div class="pg_txt">
+                            <h3 class="hm">홈페이지 제목</h3>
+                            <p class="descript">
+                                유저의 사용에 친화적이고 감각적인 느낌으로
+                                리노베이션 했습니다.메인 페이지를 소개하고 그에
+                                맞는 상품을 홍보합니다.
+                            </p>
+                        </div>
+                        <ul class="more_butt">
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        기획서보기
+                                    </div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                    <div class="txt_circle"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="b_txt" data-splitting>
+                                        홈페이지
+                                    </div>
+                                    <div class="l_butt">
+                                        <i class="fa-solid fa-angle-right"> </i>
+                                    </div>
+                                    <div class="txt_circle"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="comein">
+                        <img src="img/homepage01.jpg" />
+                        <div class="p5_box box_sz"></div>
+                    </li>
+                </ul>
+            </section>
+            <section class="page6">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_yellw">Illustration</h2>
+                    <img class="ico6" src="img/icon6.svg" />
+                </div>
+                <div class="slider_wrap">
+                    <div class="blu_bg">
+                        <div class="big_wrap">
+                            <ul class="big">
+                                <li>
+                                    <img src="img/image02.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image15.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image09.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image03.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image06.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image10.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image02.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image15.JPG" />
+                                </li>
+                                <li>
+                                    <img src="img/image09.JPG" />
+                                </li>
+                            </ul>
+                            <div class="close">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slid_wrap">
+                        <div class="slider">
+                            <ul class="small">
+                                <li><img src="img/image02.JPG" /></li>
+                                <li><img src="img/image15.JPG" /></li>
+                                <li><img src="img/image09.JPG" /></li>
+                                <li><img src="img/image03.JPG" /></li>
+                                <li><img src="img/image06.JPG" /></li>
+                                <li><img src="img/image10.JPG" /></li>
+                                <li><img src="img/image02.JPG" /></li>
+                                <li><img src="img/image15.JPG" /></li>
+                                <li><img src="img/image09.JPG" /></li>
+                            </ul>
+                        </div>
+                        <div class="prev c_butt">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="next c_butt">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page7">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_blu">Animation</h2>
+                    <img class="ico7" src="img/icon4.svg" />
+                </div>
+                <div class="m_wrap">
+                    <ul class="movies">
+                        <li>
+                            <video src="img/mylove.mov" controls></video>
+                        </li>
+                        <li>
+                            <video src="img/fn02.mp4" controls></video>
+                        </li>
+                        <li>
+                            <video src="img/spr01.mp4" controls></video>
+                        </li>
+                        <li>
+                            <video src="img/lorien_attack.mov" controls></video>
+                        </li>
+                    </ul>
+                    <div class="p7_box"></div>
+                    <ul class="p7_txt">
+                        <li class="bg_on h_down">
+                            <h3 class="select">졸업작품전 최우수상 수상작</h3>
+                            <ul class="d_txt">
+                                <li>
+                                    대학교 졸업작품 전시회에서 최우수상을 받은
+                                    작품입니다.
+                                </li>
+                                <li><strong>제목:</strong> My Love</li>
+                                <li>
+                                    <strong>내용:</strong>
+                                    사랑에 대한 주제로 시간이 지나도 영원한
+                                    사랑에 대한 내용입니다.
+                                </li>
+                                <li>
+                                    <strong>사용 툴:</strong> Maya ,
+                                    AfterEffects , Premiere , Photoshop
+                                </li>
+                            </ul>
+                            <div class="circle c_on"></div>
+                        </li>
+                        <li>
+                            <h3>Fancy Nancy</h3>
+                            <ul class="d_txt">
+                                <li>
+                                    디즈니 tv시리즈 애니메이션 작품으로,
+                                    3D애니메이터로 시즌1과 시즌3에 참여한
+                                    작품입니다.
+                                </li>
+                                <li><strong>사용 툴:</strong> Maya</li>
+                            </ul>
+                            <div class="circle"></div>
+                        </li>
+                        <li>
+                            <h3>Spirit Riding Free</h3>
+                            <ul class="d_txt">
+                                <li>
+                                    드림웍스 tv시리즈 애니메이션 작품으로,
+                                    3D애니메이터로 참여한 작품입니다.
+                                </li>
+                                <li><strong>사용 툴:</strong> Maya</li>
+                            </ul>
+                            <div class="circle"></div>
+                        </li>
+                        <li>
+                            <h3>인게임 모션 애니</h3>
+                            <ul class="d_txt">
+                                <li>
+                                    프리랜서로 활동하면서 포트폴리오로 만든
+                                    인게임 모션 작품입니다.
+                                </li>
+                                <li><strong>사용 툴:</strong> Max</li>
+                            </ul>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page8">
+                <div class="p_titl">
+                    <h2 class="titl_txt col_yellw">Contact</h2>
+                    <img class="ico8" src="img/icon5.svg" />
+                </div>
+                <ul class="p8_wrap">
+                    <li class="box_wrap1">
+                        <a href="https://blog.naver.com/hrimm12">
+                            <div class="f_box p8_box">
+                                <img src="img/blog.png" />
+                            </div>
+                            <div class="ft_16 b_box p8_box">
+                                복습하기 위해 학습일지를<br />기록한
+                                블로그입니다
+                            </div>
+                        </a>
+                    </li>
+                    <li class="box_wrap2">
+                        <div class="f_box p8_box">
+                            <img src="img/mail.png" />
+                        </div>
+                        <div class="ft_styl b_box p8_box">
+                            rimhur12@hanmail.net
+                        </div>
+                    </li>
+                    <li class="box_wrap3">
+                        <div class="f_box p8_box">
+                            <img src="img/phone.png" />
+                        </div>
+                        <div class="ft_styl b_box p8_box">
+                            010 . 9984 . 4389
+                        </div>
+                    </li>
+                </ul>
+                <div class="contact_txt">
+                    <p class="txt_1">
+                        협동심을 바탕으로 동료들과의
+                        <span>
+                            <span class="hands">
+                                <i class="fa-regular fa-handshake"></i>
+                            </span>
+                        </span>
+                        협업을 통해 서로를 이해하고
+                        <span class="h_wrap">
+                            <span class="hearts"
+                                ><i class="fa-solid fa-heart"></i
+                            ></span>
+                        </span>
+                        존중하는 자세를 가지겠습니다.
+                    </p>
+                    <p class="txt_2">
+                        함께 일하며
+                        <span>
+                            <span class="laptops">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </span>
+                        </span>
+                        서로의 장점을 살려 최고의
+                        <span>
+                            <span class="thumb"
+                                ><i class="fa-regular fa-thumbs-up"></i
+                            ></span>
+                        </span>
+                        성과를 이루어내기 위해 노력하는 웹퍼블리셔가
+                        되겠습니다!<img class="emoji" src="img/smile.png" />
+                    </p>
+                    <h3 class="txt_3">Thank you</h3>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
