@@ -22,7 +22,7 @@ body {
 @media (max-width: 760px) {
     /* header */
     header {
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -113,12 +113,12 @@ body {
         cursor: pointer;
     }
     .navi li span {
-        color: #789cd6;
+        color: #222;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
         top: 50%;
-        right: -50px;
+        right: 0px;
         transform: translateY(-50%);
         opacity: 0;
         z-index: 4;
@@ -145,7 +145,7 @@ body {
     .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 0.5s;
+        transition: 1s;
     }
     .navi li .on {
         color: #222;
@@ -160,7 +160,7 @@ body {
 
     /*container */
     #container {
-        width: 100%;
+        width: 100vw;
     }
     section {
         width: 100%;
@@ -394,7 +394,7 @@ body {
     .bg_cirl {
         width: 80%;
         height: 400px;
-        background-image: url(../img/faceimage-trans.png);
+        background-image: url(../img/circle_txt.svg);
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -415,7 +415,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-51%, -48%);
+        transform: translate(-50%, -50%);
     }
     .p2txt_wrap {
         width: 100%;
@@ -1752,6 +1752,8 @@ body {
         }
     }
     .emoji {
+        width: 40px;
+        object-fit: cover;
         animation: jump 1.5s ease-in-out infinite;
     }
     @keyframes jump {
@@ -1875,12 +1877,12 @@ body {
         cursor: pointer;
     }
     .navi li span {
-        color: #789cd6;
+        color: #222;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
         top: 50%;
-        right: -50px;
+        right: 0px;
         transform: translateY(-50%);
         opacity: 0;
         z-index: 4;
@@ -1907,7 +1909,7 @@ body {
     .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 0.5s;
+        transition: 1s;
     }
     .navi li .on {
         color: #222;
@@ -2154,7 +2156,7 @@ body {
     .bg_cirl {
         width: 80%;
         height: 400px;
-        background-image: url(../img/faceimage-trans.png);
+        background-image: url(../img/circle_txt.svg);
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -2175,7 +2177,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-51%, -48%);
+        transform: translate(-50%, -50%);
     }
     .p2txt_wrap {
         width: 100%;
@@ -3494,6 +3496,8 @@ body {
         }
     }
     .emoji {
+        width: 40px;
+        object-fit: cover;
         animation: jump 1.5s ease-in-out infinite;
     }
     @keyframes jump {
@@ -3616,12 +3620,12 @@ body {
         cursor: pointer;
     }
     .navi li span {
-        color: #789cd6;
+        color: #222;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
         top: 50%;
-        right: -50px;
+        right: 0px;
         transform: translateY(-50%);
         opacity: 0;
         z-index: 4;
@@ -3648,7 +3652,7 @@ body {
     .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 0.5s;
+        transition: 1s;
     }
     .navi li .on {
         color: #222;
@@ -3892,7 +3896,7 @@ body {
     .bg_cirl {
         width: 500px;
         height: 500px;
-        background-image: url(../img/faceimage-trans.png);
+        background-image: url(../img/circle_txt.svg);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -3911,7 +3915,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-51%, -48%);
+        transform: translate(-50%, -50%);
     }
     .p2txt_wrap {
         width: 100%;
@@ -5206,6 +5210,8 @@ body {
         }
     }
     .emoji {
+        width: 40px;
+        object-fit: cover;
         animation: jump 1.5s ease-in-out infinite;
     }
     @keyframes jump {

@@ -1,6 +1,6 @@
 $(function () {
     // 스크롤시 해당페이지로 내비가 바뀌기
-    let baseline = -400;
+    let baseline = -200;
     let con1 = $(".page1").offset().top + baseline;
     let con2 = $(".page2").offset().top + baseline;
     let con3 = $(".page3").offset().top + baseline;
