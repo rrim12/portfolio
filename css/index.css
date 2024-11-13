@@ -143,7 +143,7 @@ body {
     }
 
     /* 제이쿼리 */
-    .col_on {
+    /* .col_on {
         color: #222;
         background-color: #ffd778;
         transition: 1s;
@@ -157,18 +157,18 @@ body {
     .mouse_on {
         transform: scale(1.5);
         transition: 0.5s;
-    }
+    } */
 
     /*container */
     #container {
         width: 100vw;
     }
     section {
-        width: 100%;
+        width: 100vw;
         position: relative;
     }
     .page1 {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
     }
     /* visual */
@@ -255,8 +255,8 @@ body {
         display: flex;
         align-items: center;
         gap: 20px;
-        transform: translateY(80px);
-        opacity: 0;
+        transform: translateY(0px);
+        opacity: 1;
         transition: 1s;
     }
     .titl_txt {
@@ -370,10 +370,10 @@ body {
     .col_blu {
         color: #a6cbff;
     }
-    .up_act {
+    /* .up_act {
         transform: translateY(0px);
         opacity: 1;
-    }
+    } */
     /* 이력소개 about*/
     .page2 {
         background-color: #fff2db;
@@ -384,14 +384,13 @@ body {
         width: 500px;
         height: 500px;
         position: relative;
-        opacity: 0;
-        transform: translateX(-100px);
+        opacity: 1;
         transition: 1s;
     }
-    .f_act {
+    /* .f_act {
         opacity: 1;
         transform: translateX(0px);
-    }
+    } */
     .bg_cirl {
         width: 80%;
         height: 400px;
@@ -405,10 +404,12 @@ body {
         opacity: 0;
         transition: 1.5s ease-out;
     }
+    /* 제이쿼리 */
     .trun {
         opacity: 1;
         transform: rotate(360deg);
     }
+    /* ============== */
     .face {
         width: 60%;
         object-fit: cover;
@@ -427,15 +428,13 @@ body {
     }
     .resume {
         font-family: "GmarketSansMedium";
-        opacity: 0;
-        transform: translateX(100px);
-        transition: 1s;
+        opacity: 1;
     }
     /* 제이쿼리 움직임 */
-    .resu_mov {
+    /* .resu_mov {
         opacity: 1;
         transform: translateX(0px);
-    }
+    } */
     .resume h2 {
         font-size: 30px;
         font-weight: normal;
@@ -462,12 +461,11 @@ body {
     .skill_wrap {
         width: 100%;
         margin: 0px auto;
-        opacity: 0;
-        transition: 1s;
-    }
-    .skill_up {
         opacity: 1;
     }
+    /* .skill_up {
+        opacity: 1;
+    } */
     .skill_wrap h3 {
         font-weight: 500;
     }
@@ -482,8 +480,8 @@ body {
         margin: 0px auto;
     }
     .ability li {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         font-size: 20px;
         font-weight: 300;
         border-radius: 50%;
@@ -1063,8 +1061,8 @@ body {
         }
     }
     .a_txt {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         text-align: center;
         background-color: #fff2db;
         border-radius: 50%;
@@ -1073,7 +1071,13 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         box-sizing: border-box;
-        padding-top: 18px;
+        font-size: 1rem;
+    }
+    .percent_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .percent {
         font-weight: 700;
@@ -1104,9 +1108,7 @@ body {
     .mock {
         width: 300px;
         object-fit: cover;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: 1s;
+        opacity: 1;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -1114,15 +1116,14 @@ body {
     .comein {
         width: 300px;
         position: relative;
-        opacity: 0;
-        transform: translateX(50px);
-        transition: 1s;
-    }
-    /* 옆에서 들어옴 박스 제이쿼리 움직임 */
-    .comes {
         opacity: 1;
         transform: translateX(0px);
     }
+    /* 옆에서 들어옴 박스 제이쿼리 움직임 */
+    /* .comes {
+        opacity: 1;
+        transform: translateX(0px);
+    } */
     .comein img {
         width: 300px;
         height: 510px;
@@ -1157,10 +1158,9 @@ body {
         font-weight: 300;
         font-size: 30px;
         text-align: left;
-        opacity: 0;
-        display: inline-;
-        transform: translateY(50px);
-        transition: 1s;
+        opacity: 1;
+        display: inline-block;
+        transform: translateY(0px);
     }
     .descript {
         display: inline-block;
@@ -1172,10 +1172,7 @@ body {
         line-height: 26px;
         letter-spacing: 0.6px;
         word-break: keep-all;
-        opacity: 0;
-        transform: translateX(-50%);
-        transform: translateY(50px);
-        transition: 1s;
+        opacity: 1;
     }
     /* 기획서 홈페이지 링크버튼 */
     .more_butt {
@@ -1187,21 +1184,19 @@ body {
         font-family: "NanumSquare";
         font-weight: bold;
         font-size: 18px;
-        opacity: 0;
+        opacity: 1;
         left: 50%;
         transform: translateX(-50%);
-        transform: translateY(0px);
-        transition: 1s;
     }
     /* 글씨 애니메이션 제이쿼리 */
-    .go_up {
+    /* .go_up {
         opacity: 1;
         transform: translateY(0px);
     }
     .mock.go_up,
     .more_butt.go_up {
         transform: translateX(-50%);
-    }
+    } */
     /* =============================================== */
     .more_butt li {
         width: calc(100% / 2);
@@ -1329,20 +1324,18 @@ body {
         width: 100%;
         margin-top: 100px;
         position: relative;
-        opacity: 0;
-        transform: translateX(-500px);
-        transition: 1s;
+        opacity: 1;
     }
     /* 슬라이드 상자가 왼에서 오른쪽으로 오는 모션 */
-    .b_moving {
+    /* .b_moving {
         opacity: 1;
         transform: translateX(0px);
-    }
+    } */
     /* 이미지 누르면 팝업 */
     .blu_bg {
         width: 100%;
         height: 600px;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
         position: absolute;
         top: 0px;
         left: 0px;
@@ -1380,6 +1373,7 @@ body {
         font-size: 35px;
         cursor: pointer;
         transform: translateY(-40px);
+
         color: #789cd6;
     }
     /* 슬라이드 */
@@ -1463,15 +1457,12 @@ body {
         top: 0px;
         left: 0px;
         z-index: 2;
-        opacity: 0;
-        transform: translateX(500px);
-        transition: 1s;
+        opacity: 1;
     }
     .movies li {
         position: absolute;
         top: 0px;
         left: 0px;
-        display: none;
     }
     .movies li:nth-child(1) {
         display: block;
@@ -1488,18 +1479,14 @@ body {
         top: 15px;
         left: 15px;
         z-index: 1;
-        opacity: 0;
-        transform: translateX(500px);
-        transition: 1s;
+        opacity: 1;
     }
     .p7_txt {
         width: 100%;
         position: absolute;
         top: -70px;
         left: 10px;
-        opacity: 0;
-        transform: translateX(500px);
-        transition: 1s;
+        opacity: 1;
         display: flex;
         gap: 15px;
     }
@@ -1524,10 +1511,10 @@ body {
     }
 
     /* 옆에서 들어오는 애니 */
-    .moving {
+    /* .moving {
         opacity: 1;
         transform: translateX(0px);
-    }
+    } */
     /* 동영상 이름 선택시 변화 */
     .circle {
         width: 50px;
@@ -1650,14 +1637,9 @@ body {
         font-weight: 600;
         font-family: "NanumSquare";
         position: relative;
-        opacity: 0;
-        transition: 1s;
-    }
-    .txt_1 {
-        transform: translateX(-70px);
+        opacity: 1;
     }
     .txt_2 {
-        transform: translateX(70px);
         margin-bottom: 50px;
     }
     .contact_txt p span {
@@ -1679,9 +1661,7 @@ body {
         font-family: "NanumSquare";
         font-size: 80px;
         font-weight: 900;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: 0.5s;
+        opacity: 1;
     }
     /* 제이쿼리 애니 */
     .txt_go {
