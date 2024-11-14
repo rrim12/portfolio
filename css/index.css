@@ -18,6 +18,7 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
 /* 모바일=========================================== */
 @media (max-width: 760px) {
     /* header */
@@ -29,6 +30,11 @@ body {
         box-sizing: border-box;
         padding: 10px 20px;
         z-index: 6;
+        transition: 1s;
+    }
+    /* 스크롤시 헤더색변화 */
+    .h_on {
+        background-color: #fff;
     }
     .butt {
         width: 100%;
@@ -40,6 +46,10 @@ body {
         box-sizing: border-box;
         padding-bottom: 10px;
     }
+    /* 스크롤시 헤더 보더 없게 */
+    .line_non {
+        border-bottom: 1px solid transparent;
+    }
     .butt h1 {
         width: 50px;
         height: 50px;
@@ -48,6 +58,7 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: none;
     }
     .menu {
         font-family: "S-CoreDream-3Light";
@@ -102,27 +113,29 @@ body {
         font-family: "S-CoreDream-3Light";
         font-size: 18px;
         position: fixed;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 5;
-        display: none;
+        left: 30px;
+        top: 15px;
+        z-index: 6;
+        display: flex;
+        gap: 10px;
     }
     .navi li {
         margin-bottom: 12px;
         position: relative;
         cursor: pointer;
+        transition: 2s;
     }
     .navi li span {
         color: #222;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
-        top: 50%;
-        right: 0px;
-        transform: translateY(-50%);
+        top: 80%;
+        left: 0%;
+        transform: translateY(50%) translateX(-50%);
         opacity: 0;
         z-index: 4;
+        transition: 0.5s;
     }
     .n_box {
         width: 30px;
@@ -143,18 +156,18 @@ body {
     }
 
     /* 제이쿼리 */
-    /* .col_on {
+    .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 1s;
+        transition: 2s;
     }
     .navi li .on {
         color: #222;
         opacity: 1;
-        transition: 0.5s;
-        right: 40px;
+        transition: 1s;
+        left: 50%;
     }
-    .mouse_on {
+    /* .mouse_on {
         transform: scale(1.5);
         transition: 0.5s;
     } */
@@ -378,6 +391,7 @@ body {
     .page2 {
         background-color: #fff2db;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
     .bg_txt {
@@ -1088,6 +1102,7 @@ body {
         background-color: #ddebff;
         height: 1500px;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
     /* 홈페이지 중복된 css */
@@ -1288,6 +1303,7 @@ body {
         height: 1500px;
         background-color: #fff2db;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
     .page4 li:nth-child(2) {
@@ -1310,6 +1326,7 @@ body {
         height: 1500px;
         background-color: #ddebff;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
 
@@ -1318,6 +1335,7 @@ body {
         height: 100vh;
         background-color: #fff2db;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
     .slider_wrap {
@@ -1333,7 +1351,7 @@ body {
     } */
     /* 이미지 누르면 팝업 */
     .blu_bg {
-        width: 100%;
+        width: 100vw;
         height: 600px;
         backdrop-filter: blur(10px);
         position: absolute;
@@ -1349,7 +1367,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -45%);
+        transform: translate(-60%, -50%);
     }
     .big {
         width: 100%;
@@ -1441,6 +1459,7 @@ body {
         height: 100vh;
         background-color: #ddebff;
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
     }
     .m_wrap {
@@ -1548,6 +1567,7 @@ body {
     /* contact */
     .page8 {
         padding: 50px;
+        padding-top: 95px;
         box-sizing: border-box;
         /* background-color: #fff2db; */
     }
@@ -1856,6 +1876,7 @@ body {
         margin-bottom: 12px;
         position: relative;
         cursor: pointer;
+        transition: 2s;
     }
     .navi li span {
         color: #222;
@@ -1867,6 +1888,7 @@ body {
         transform: translateY(-50%);
         opacity: 0;
         z-index: 4;
+        transition: 1s;
     }
     .n_box {
         width: 30px;
@@ -1890,12 +1912,12 @@ body {
     .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 1s;
+        transition: 2s;
     }
     .navi li .on {
         color: #222;
         opacity: 1;
-        transition: 0.5s;
+        transition: 1s;
         right: 40px;
     }
     .mouse_on {
@@ -3599,6 +3621,7 @@ body {
         margin-bottom: 12px;
         position: relative;
         cursor: pointer;
+        transition: 2s;
     }
     .navi li span {
         color: #222;
@@ -3610,6 +3633,7 @@ body {
         transform: translateY(-50%);
         opacity: 0;
         z-index: 4;
+        transition: 1s;
     }
     .n_box {
         width: 30px;
@@ -3633,12 +3657,12 @@ body {
     .col_on {
         color: #222;
         background-color: #ffd778;
-        transition: 1s;
+        transition: 2s;
     }
     .navi li .on {
         color: #222;
         opacity: 1;
-        transition: 0.5s;
+        transition: 1s;
         right: 40px;
     }
     .mouse_on {

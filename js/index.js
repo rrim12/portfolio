@@ -90,15 +90,19 @@ $(function () {
     }
     //스크롤시 움직임 작동
     $(window).on("scroll", function () {
+        //모바일 스크롤시 헤더 색바뀜
+        $("header").addClass("h_on");
+        $(".butt").addClass("line_non");
+
         let point = $(this).scrollTop();
 
         if (point >= con1 && point < con2) {
             erase();
-
+            $(".navi li").eq(0).children("span").stop().addClass("on");
             $(".navi li").eq(0).children("div").stop().addClass("col_on");
         } else if (point >= con2 && point < con3) {
             erase();
-
+            $(".navi li").eq(1).children("span").stop().addClass("on");
             $(".navi li").eq(1).children("div").stop().addClass("col_on");
 
             //어바웃이력
@@ -135,7 +139,7 @@ $(function () {
             //
         } else if (point >= con3 && point < con4) {
             erase();
-
+            $(".navi li").eq(2).children("span").stop().addClass("on");
             $(".navi li").eq(2).children("div").stop().addClass("col_on");
 
             //홈페이지1
@@ -165,7 +169,7 @@ $(function () {
             }, 1100);
         } else if (point >= con4 && point < con5) {
             erase();
-
+            $(".navi li").eq(3).children("span").stop().addClass("on");
             $(".navi li").eq(3).children("div").stop().addClass("col_on");
 
             //홈페이지2
@@ -195,7 +199,7 @@ $(function () {
             }, 1100);
         } else if (point >= con5 && point < con6) {
             erase();
-
+            $(".navi li").eq(4).children("span").stop().addClass("on");
             $(".navi li").eq(4).children("div").stop().addClass("col_on");
 
             //홈페이지3
@@ -225,7 +229,7 @@ $(function () {
             }, 1100);
         } else if (point >= con6 && point < con7) {
             erase();
-
+            $(".navi li").eq(5).children("span").stop().addClass("on");
             $(".navi li").eq(5).children("div").stop().addClass("col_on");
             //일러
             setTimeout(function () {
@@ -238,7 +242,7 @@ $(function () {
             }, 600);
         } else if (point >= con7 && point < con8) {
             erase();
-
+            $(".navi li").eq(6).children("span").stop().addClass("on");
             $(".navi li").eq(6).children("div").stop().addClass("col_on");
 
             //애니
@@ -258,7 +262,7 @@ $(function () {
             }, 850);
         } else {
             erase();
-
+            $(".navi li").eq(7).children("span").stop().addClass("on");
             $(".navi li").eq(7).children("div").stop().addClass("col_on");
 
             //연락처컨택
@@ -322,13 +326,10 @@ $(function () {
     // 내비 호버시 스케일변화
     $(".navi li").on("mouseenter", function () {
         let i = $(this).index();
-
         $(this).children("div").stop().addClass("mouse_on");
-        $(".navi li").eq(i).children("span").stop().addClass("on");
     });
     $(".navi li").on("mouseleave", function () {
         $(".navi li div").stop().removeClass("mouse_on");
-        $(".navi li span").stop().removeClass("on");
     });
     // 내비 클릭시 페이지 이동
     $(".navi li").on("click", function () {
