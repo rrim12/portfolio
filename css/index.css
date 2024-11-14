@@ -31,6 +31,7 @@ body {
         padding: 10px 20px;
         z-index: 6;
         transition: 1s;
+        display: none;
     }
     /* 스크롤시 헤더색변화 */
     .h_on {
@@ -113,11 +114,12 @@ body {
         font-family: "S-CoreDream-3Light";
         font-size: 18px;
         position: fixed;
-        left: 30px;
+        left: 50%;
         top: 15px;
         z-index: 6;
         display: flex;
         gap: 10px;
+        transform: translateX(-50%);
     }
     .navi li {
         margin-bottom: 12px;
@@ -1139,7 +1141,7 @@ body {
         opacity: 1;
         transform: translateX(0px);
     } */
-    .comein img {
+    .homevideo {
         width: 300px;
         height: 510px;
         object-fit: cover;
@@ -2885,7 +2887,7 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
-    .comein img {
+    .homevideo {
         width: 300px;
         height: 510px;
         object-fit: cover;
@@ -4626,7 +4628,7 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
-    .comein img {
+    .homevideo {
         width: 500px;
         height: 850px;
         object-fit: cover;
