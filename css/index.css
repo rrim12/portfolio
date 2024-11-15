@@ -1487,6 +1487,7 @@ body {
         position: absolute;
         top: 0px;
         left: 0px;
+        display: none;
     }
     .movies li:nth-child(1) {
         display: block;

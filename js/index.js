@@ -18,7 +18,7 @@ $(function () {
 
     //숫자카운트 html
     function count1() {
-        let num = 60;
+        let num = 70;
         numstop = setInterval(function () {
             num++;
             if (num > 90) {
@@ -26,11 +26,11 @@ $(function () {
             } else {
                 $(".number1").stop().text(num);
             }
-        }, 70);
+        }, 50);
     }
     // 숫자카운트 css
     function count2() {
-        let num2 = 55;
+        let num2 = 65;
         numstop2 = setInterval(function () {
             num2++;
             if (num2 > 85) {
@@ -38,11 +38,11 @@ $(function () {
             } else {
                 $(".number2").stop().text(num2);
             }
-        }, 70);
+        }, 50);
     }
     // 숫자카운트 jq
     function count3() {
-        let num3 = 50;
+        let num3 = 60;
         numstop3 = setInterval(function () {
             num3++;
             if (num3 > 80) {
@@ -50,11 +50,11 @@ $(function () {
             } else {
                 $(".number3").stop().text(num3);
             }
-        }, 70);
+        }, 50);
     }
     // 숫자카운트 jss
     function count4() {
-        let num4 = 40;
+        let num4 = 50;
         numstop4 = setInterval(function () {
             num4++;
             if (num4 > 70) {
@@ -62,11 +62,11 @@ $(function () {
             } else {
                 $(".number4").stop().text(num4);
             }
-        }, 70);
+        }, 50);
     }
     // 숫자카운트 photoshop
     function count5() {
-        let num5 = 55;
+        let num5 = 65;
         numstop5 = setInterval(function () {
             num5++;
             if (num5 > 85) {
@@ -74,11 +74,11 @@ $(function () {
             } else {
                 $(".number5").stop().text(num5);
             }
-        }, 70);
+        }, 50);
     }
     // 숫자카운트 illuste
     function count6() {
-        let num6 = 45;
+        let num6 = 55;
         numstop6 = setInterval(function () {
             num6++;
             if (num6 > 75) {
@@ -86,7 +86,7 @@ $(function () {
             } else {
                 $(".number6").stop().text(num6);
             }
-        }, 70);
+        }, 50);
     }
     //스크롤시 움직임 작동
     $(window).on("scroll", function () {
@@ -128,14 +128,22 @@ $(function () {
                 $(".ability li:nth-child(4)").addClass("pie_on");
                 $(".ability li:nth-child(5)").addClass("pie_on");
                 $(".ability li:nth-child(6)").addClass("pie_on");
+                count1();
+                count2();
+                count3();
+                count4();
+                count5();
+                count6();
             }, 2000);
             //
-            count1();
-            count2();
-            count3();
-            count4();
-            count5();
-            count6();
+            setTimeout(() => {
+                clearInterval(numstop);
+                clearInterval(numstop2);
+                clearInterval(numstop3);
+                clearInterval(numstop4);
+                clearInterval(numstop5);
+                clearInterval(numstop6);
+            }, 3000);
             //
         } else if (point >= con3 && point < con4) {
             erase();
