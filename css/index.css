@@ -13,17 +13,17 @@
     font-weight: normal;
     font-style: normal;
 }
-html,
-body {
+html {
     overflow-x: hidden;
 }
 body {
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* 모바일=========================================== */
-@media (max-width: 760px) {
+@media (max-width: 759px) {
     /* header */
     header {
         width: 100vw;
@@ -179,10 +179,10 @@ body {
 
     /*container */
     #container {
-        width: 100vw;
+        width: 100%;
     }
     section {
-        width: 100vw;
+        width: 100%;
         position: relative;
     }
     .page1 {
@@ -1105,7 +1105,7 @@ body {
     /* 홈페이지1 */
     .page3 {
         background-color: #ddebff;
-        height: 1500px;
+        height: 1600px;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -1120,6 +1120,7 @@ body {
     }
     .hpage > li {
         width: 100%;
+        height: 700px;
     }
     .more {
         opacity: 1;
@@ -1305,7 +1306,7 @@ body {
     /* ====================================== */
     /* 홈페이지2 */
     .page4 {
-        height: 1500px;
+        height: 1600px;
         background-color: #fff2db;
         padding: 50px;
         padding-top: 95px;
@@ -1328,7 +1329,7 @@ body {
 
     /* 홈페이지3 */
     .page5 {
-        height: 1500px;
+        height: 1600px;
         background-color: #ddebff;
         padding: 50px;
         padding-top: 95px;
@@ -1337,7 +1338,7 @@ body {
 
     /* 일러스트 */
     .page6 {
-        height: 100vh;
+        height: 1000px;
         background-color: #fff2db;
         padding: 50px;
         padding-top: 95px;
@@ -1345,7 +1346,6 @@ body {
     }
     .slider_wrap {
         width: 100%;
-        margin-top: 100px;
         position: relative;
         opacity: 1;
     }
@@ -1361,7 +1361,7 @@ body {
         backdrop-filter: blur(10px);
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: -50px;
         display: none;
         z-index: 2;
     }
@@ -1371,7 +1371,7 @@ body {
         display: flex;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 60%;
         transform: translate(-60%, -50%);
     }
     .big {
@@ -1461,7 +1461,7 @@ body {
 
     /* 애니메이션 */
     .page7 {
-        height: 100vh;
+        height: 1000px;
         background-color: #ddebff;
         padding: 50px;
         padding-top: 95px;
@@ -1926,6 +1926,12 @@ body {
         transition: 1s;
         right: 40px;
     }
+    .navi li .txt_on {
+        color: #222;
+        opacity: 1;
+        transition: 1s;
+        right: 40px;
+    }
     .mouse_on {
         transform: scale(1.5);
         transition: 0.5s;
@@ -1940,7 +1946,7 @@ body {
         position: relative;
     }
     .page1 {
-        height: 100vh;
+        height: 1000px;
     }
     /* visual */
     .p_box {
@@ -1959,13 +1965,13 @@ body {
             rgba(0, 0, 0, 0.6) 50%
         );
         position: absolute;
-        bottom: 0%;
+        bottom: 20%;
         left: 0%;
         z-index: 3;
     }
     .p_box video {
         width: 0%;
-        height: 100%;
+        height: 80%;
         object-fit: cover;
         position: absolute;
         top: 0%;
@@ -1974,7 +1980,7 @@ body {
     }
     .b_sqr1 {
         width: 0px;
-        height: 100%;
+        height: 80%;
         background-color: #789cd6;
         position: absolute;
         top: 10px;
@@ -1984,7 +1990,7 @@ body {
     /* 이름 웹퍼블리셔 글씨 */
     .name {
         position: absolute;
-        bottom: -58px;
+        bottom: 50px;
         left: 120px;
         z-index: 4;
         font-size: 150px;
@@ -1998,7 +2004,7 @@ body {
         color: #ffd778;
         font-size: 95px;
         position: absolute;
-        bottom: -130px;
+        bottom: -10px;
         right: 30px;
         transform: translateX(250px);
         opacity: 0;
@@ -2231,6 +2237,7 @@ body {
     }
     .skill_wrap {
         width: 100%;
+        height: 400px;
         margin: 0px auto;
         opacity: 0;
         transition: 1s;
@@ -2852,19 +2859,20 @@ body {
     /* 홈페이지1 */
     .page3 {
         background-color: #ddebff;
-        height: 100vh;
         padding: 50px;
         box-sizing: border-box;
     }
     /* 홈페이지 중복된 css */
     .hpage {
         width: 100%;
-        height: 100%;
+        height: 600px;
         display: flex;
+        flex-wrap: wrap;
         margin: 100px auto;
     }
     .hpage > li {
         width: calc(100% / 2);
+        height: 600px;
     }
     .more {
         opacity: 1;
@@ -2884,8 +2892,8 @@ body {
         width: 300px;
         position: relative;
         opacity: 0;
-        transform: translateX(50px);
-        transition: 1s;
+        transform: translateX(250px);
+        transition: 0.8s;
     }
     .comes {
         opacity: 1;
@@ -3050,7 +3058,6 @@ body {
     /* ====================================== */
     /* 홈페이지2 */
     .page4 {
-        height: 100vh;
         background-color: #fff2db;
         padding: 50px;
         box-sizing: border-box;
@@ -3071,7 +3078,6 @@ body {
 
     /* 홈페이지3 */
     .page5 {
-        height: 100vh;
         background-color: #ddebff;
         padding: 50px;
         box-sizing: border-box;
@@ -3079,18 +3085,18 @@ body {
 
     /* 일러스트 */
     .page6 {
-        height: 100vh;
+        height: 1000px;
         background-color: #fff2db;
         padding: 50px;
         box-sizing: border-box;
     }
     .slider_wrap {
         width: 100%;
-        margin-top: 100px;
         position: relative;
         opacity: 0;
         transform: translateX(-500px);
         transition: 1s;
+        margin-top: 150px;
     }
     /* 슬라이드 상자가 왼에서 오른쪽으로 오는 모션 */
     .b_moving {
@@ -3201,21 +3207,22 @@ body {
     }
     /* 애니메이션 */
     .page7 {
-        height: 100vh;
+        height: 1000px;
         background-color: #ddebff;
         padding: 50px;
         box-sizing: border-box;
     }
     .m_wrap {
         width: 720px;
-        height: 100%;
+        height: 405px;
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, -50%);
     }
     .movies {
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -3317,7 +3324,7 @@ body {
 
     /* contact */
     .page8 {
-        height: 100vh;
+        height: 1000px;
         padding: 50px;
         box-sizing: border-box;
         /* background-color: #fff2db; */
@@ -3332,6 +3339,16 @@ body {
         margin-top: 200px;
         margin-bottom: 70px;
         position: relative;
+    }
+    .box_trans {
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: 1s;
+    }
+    /* 제이쿼리 옆에서 들어오는 모션 */
+    .box_mov {
+        transform: translateX(0px);
+        opacity: 1;
     }
     .p8_wrap > li {
         width: 200px;
@@ -3671,6 +3688,12 @@ body {
         transition: 1s;
         right: 40px;
     }
+    .navi li .txt_on {
+        color: #222;
+        opacity: 1;
+        transition: 1s;
+        right: 40px;
+    }
     .mouse_on {
         transform: scale(1.5);
         transition: 0.5s;
@@ -3682,11 +3705,14 @@ body {
     }
     section {
         width: 100%;
-        height: 100vh;
         position: relative;
+    }
+    .page1 {
+        height: 1000px;
     }
     /* visual */
     .p_box {
+        margin-top: 50px;
         width: 1080px;
         height: 720px;
         position: absolute;
@@ -3702,13 +3728,13 @@ body {
             rgba(0, 0, 0, 0.6) 50%
         );
         position: absolute;
-        bottom: 0px;
+        bottom: 100px;
         left: 0px;
         z-index: 3;
     }
     .p_box video {
         width: 0px;
-        height: 720px;
+        height: 620px;
         object-fit: cover;
         position: absolute;
         top: 0px;
@@ -3717,7 +3743,7 @@ body {
     }
     .b_sqr1 {
         width: 0px;
-        height: 720px;
+        height: 620px;
         background-color: #789cd6;
         position: absolute;
         top: 10px;
@@ -3726,7 +3752,7 @@ body {
     }
     .name {
         position: absolute;
-        bottom: -41px;
+        bottom: 60px;
         left: -67px;
         z-index: 4;
         font-size: 250px;
@@ -3740,7 +3766,7 @@ body {
         color: #ffd778;
         font-size: 150px;
         position: absolute;
-        bottom: -143px;
+        bottom: -45px;
         right: -25px;
         transform: translateX(250px);
         opacity: 0;
@@ -3888,6 +3914,7 @@ body {
     }
     /* 이력소개 about*/
     .page2 {
+        height: 1000px;
         background-color: #fff2db;
         padding: 60px;
         box-sizing: border-box;
@@ -3939,8 +3966,8 @@ body {
     .resume {
         font-family: "GmarketSansMedium";
         opacity: 0;
-        transform: translateX(100px);
-        transition: 1s;
+        transform: translateX(300px);
+        transition: 0.8s;
     }
     /* 제이쿼리 움직임 */
     .resu_mov {
@@ -4625,8 +4652,8 @@ body {
         width: 500px;
         position: relative;
         opacity: 0;
-        transform: translateX(50px);
-        transition: 1s;
+        transform: translateX(300px);
+        transition: 0.8s;
     }
     .comes {
         opacity: 1;
@@ -4808,6 +4835,7 @@ body {
 
     /* 일러스트 */
     .page6 {
+        height: 1000px;
         background-color: #fff2db;
         padding: 60px;
         box-sizing: border-box;
@@ -4989,25 +5017,29 @@ body {
     .p7_txt > li {
         width: 100%;
         height: 55px;
-        background-color: rgba(255, 255, 255, 0.5);
+        line-height: 55px;
         box-sizing: border-box;
-        padding: 10px 20px;
         font-family: "NanumSquare";
         font-weight: 400;
         font-size: 17px;
         overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+        transition: 0.6s;
     }
     .p7_txt .h_down {
         height: 350px;
-        transition: 1s;
     }
     .p7_txt h3 {
         display: inline-block;
         font-family: "GmarketSansMedium";
         font-size: 20px;
         cursor: pointer;
-        border-bottom: 3px solid transparent;
         transition: 1s;
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 15px;
     }
 
     /* 옆에서 들어오는 애니 */
@@ -5018,35 +5050,54 @@ body {
     /* 동영상 이름 선택시 변화 */
     .p7_txt .select {
         margin-left: 30px;
-        border-bottom: 3px solid #789cd6;
         transition: 1s;
     }
     .p7_txt .bg_on {
         background-color: #fff;
         transition: 1s;
     }
-    .circle {
-        display: none;
-    }
     .d_txt {
-        width: 100%;
+        width: 80%;
         height: 100%;
         margin-top: 30px;
         line-height: 27px;
         word-break: keep-all;
         display: block;
+        position: absolute;
+        top: 50px;
+        left: 30px;
     }
     .d_txt > li {
         margin-bottom: 15px;
     }
-
+    /* 버튼 */
+    .circle {
+        background-color: #a6cbff;
+        width: 50px;
+        height: 55px;
+        border-radius: 0px 50% 50% 0px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        transition: 0.4s;
+    }
+    /* 버튼차오름 */
+    .full {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .full2 {
+        width: 100%;
+        border-radius: 0px;
+    }
     /* contact */
     .page8 {
+        height: 1000px;
         padding: 60px;
         box-sizing: border-box;
         /* background-color: #fff2db; */
     }
-
     .p8_wrap {
         width: 100%;
         display: flex;
@@ -5056,6 +5107,16 @@ body {
         margin-top: 200px;
         margin-bottom: 70px;
         position: relative;
+    }
+    .box_trans {
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: 1s;
+    }
+    /* 제이쿼리 옆에서 들어오는 모션 */
+    .box_mov {
+        transform: translateX(0px);
+        opacity: 1;
     }
     .p8_wrap > li {
         width: 300px;

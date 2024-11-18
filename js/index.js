@@ -154,7 +154,7 @@ $(function () {
             setTimeout(function () {
                 //타이틀
                 $(".page3 .p_titl").stop().addClass("up_act");
-            }, 300);
+            }, 100);
             setTimeout(function () {
                 //목업
                 $(".page3 .mock").stop().addClass("go_up");
@@ -162,19 +162,19 @@ $(function () {
             setTimeout(function () {
                 //홈피제목
                 $(".page3 .hm").stop().addClass("go_up");
-            }, 750);
+            }, 850);
             setTimeout(function () {
                 //내용설명
                 $(".page3 .descript").stop().addClass("go_up");
-            }, 850);
+            }, 1200);
             setTimeout(function () {
                 //버튼두개
                 $(".page3 .more_butt").stop().addClass("go_up");
-            }, 950);
+            }, 1600);
             setTimeout(function () {
                 //오른쪽 홈페이지 옆에서 들어오게
                 $(".page3 .comein").stop().addClass("comes");
-            }, 1100);
+            }, 1800);
         } else if (point >= con4 && point < con5) {
             erase();
             $(".navi li").eq(3).children("span").stop().addClass("on");
@@ -184,7 +184,7 @@ $(function () {
             setTimeout(function () {
                 //타이틀
                 $(".page4 .p_titl").stop().addClass("up_act");
-            }, 300);
+            }, 100);
             setTimeout(function () {
                 //목업
                 $(".page4 .mock").stop().addClass("go_up");
@@ -192,19 +192,19 @@ $(function () {
             setTimeout(function () {
                 //홈피제목
                 $(".page4 .hm").stop().addClass("go_up");
-            }, 750);
+            }, 850);
             setTimeout(function () {
                 //내용설명
                 $(".page4 .descript").stop().addClass("go_up");
-            }, 850);
+            }, 1200);
             setTimeout(function () {
                 //버튼두개
                 $(".page4 .more_butt").stop().addClass("go_up");
-            }, 950);
+            }, 1600);
             setTimeout(function () {
                 //오른쪽 홈페이지 옆에서 들어오게
                 $(".page4 .comein").stop().addClass("comes");
-            }, 1100);
+            }, 1800);
         } else if (point >= con5 && point < con6) {
             erase();
             $(".navi li").eq(4).children("span").stop().addClass("on");
@@ -214,7 +214,7 @@ $(function () {
             setTimeout(function () {
                 //타이틀
                 $(".page5 .p_titl").stop().addClass("up_act");
-            }, 300);
+            }, 100);
             setTimeout(function () {
                 //목업
                 $(".page5 .mock").stop().addClass("go_up");
@@ -222,19 +222,19 @@ $(function () {
             setTimeout(function () {
                 //홈피제목
                 $(".page5 .hm").stop().addClass("go_up");
-            }, 750);
+            }, 850);
             setTimeout(function () {
                 //내용설명
                 $(".page5 .descript").stop().addClass("go_up");
-            }, 850);
+            }, 1200);
             setTimeout(function () {
                 //버튼두개
                 $(".page5 .more_butt").stop().addClass("go_up");
-            }, 950);
+            }, 1600);
             setTimeout(function () {
                 //오른쪽 홈페이지 옆에서 들어오게
                 $(".page5 .comein").stop().addClass("comes");
-            }, 1100);
+            }, 1800);
         } else if (point >= con6 && point < con7) {
             erase();
             $(".navi li").eq(5).children("span").stop().addClass("on");
@@ -261,13 +261,14 @@ $(function () {
             //옆으로 들어오는 동영상
             setTimeout(function () {
                 $(".movies").addClass("moving");
+                $(".movies li:first").children("video").get(0).play();
             }, 500);
             setTimeout(function () {
                 $(".p7_box").addClass("moving");
-            }, 650);
+            }, 750);
             setTimeout(function () {
                 $(".p7_txt").addClass("moving");
-            }, 850);
+            }, 1200);
         } else {
             erase();
             $(".navi li").eq(7).children("span").stop().addClass("on");
@@ -278,23 +279,32 @@ $(function () {
                 $(".page8 .p_titl").stop().addClass("up_act");
             }, 300);
             setTimeout(function () {
+                $(".box_wrap3").stop().addClass("box_mov");
+            }, 500);
+            setTimeout(function () {
+                $(".box_wrap2").stop().addClass("box_mov");
+            }, 700);
+            setTimeout(function () {
+                $(".box_wrap1").stop().addClass("box_mov");
+            }, 900);
+            setTimeout(function () {
                 $(".box_wrap1 .b_box").stop().addClass("popup");
-            }, 800);
+            }, 1500);
             setTimeout(function () {
                 $(".box_wrap2 .b_box").stop().addClass("popup");
-            }, 1000);
+            }, 1900);
             setTimeout(function () {
                 $(".box_wrap3 .b_box").stop().addClass("popup");
-            }, 1200);
+            }, 2300);
             setTimeout(function () {
                 $(".txt_1").stop().addClass("txt_go");
-            }, 1400);
+            }, 2600);
             setTimeout(function () {
                 $(".txt_2").stop().addClass("txt_go");
-            }, 1600);
+            }, 2800);
             setTimeout(function () {
                 $(".txt_3").stop().addClass("txt_up");
-            }, 2000);
+            }, 3200);
         }
     });
     // 헤더 클릭시 해당 페이지 이동
@@ -335,9 +345,11 @@ $(function () {
     $(".navi li").on("mouseenter", function () {
         let i = $(this).index();
         $(this).children("div").stop().addClass("mouse_on");
+        $(this).children("span").stop().addClass("txt_on");
     });
     $(".navi li").on("mouseleave", function () {
         $(".navi li div").stop().removeClass("mouse_on");
+        $(".navi li span").stop().removeClass("txt_on");
     });
     // 내비 클릭시 페이지 이동
     $(".navi li").on("click", function () {
@@ -498,12 +510,21 @@ $(function () {
         $(this).children("h3").addClass("select");
         $(".p7_txt li").removeClass("bg_on");
         $(this).addClass("bg_on");
+        //반응형 하얀버튼 움직임
         $(".p7_txt li .circle ").removeClass("c_on");
         $(this).children(".circle").addClass("c_on");
-
+        //색이 하늘색으로 차오름
+        $(".p7_txt li .circle ").removeClass("full");
+        $(this).children(".circle").addClass("full");
         //슬라이드 다운 업
         $(".p7_txt li").removeClass("h_down");
         $(this).addClass("h_down");
+    });
+    $(".p7_txt > li > h3").on("mouseenter", function () {
+        $(this).siblings(".circle").addClass("full2");
+    });
+    $(".p7_txt > li > h3").on("mouseleave", function () {
+        $(this).siblings(".circle").removeClass("full2");
     });
     // 패널 배경 위로 올라가는 애니메이션
     $(".panel li:first").stop().delay(300).animate({ height: "0px" }, 500);
