@@ -395,26 +395,26 @@ $(function () {
     });
     Splitting();
     //마우스 가져가면 홈페이지 분리되는 박스
-    $(".comein").on("mouseenter", function () {
-        $(this)
-            .children(".box_sz")
-            .stop()
-            .animate({ top: "-85px", left: "15px" }, 500);
-        $(this)
-            .children(".p4_box")
-            .stop()
-            .animate({ top: "-85px", left: "15px" }, 500);
-    });
-    $(".comein").on("mouseleave", function () {
-        $(this)
-            .children(".box_sz")
-            .stop()
-            .animate({ top: "-100px", left: "0px" }, 500);
-        $(this)
-            .children(".p4_box")
-            .stop()
-            .animate({ top: "-100px", left: "0px" }, 500);
-    });
+    // $(".comein").on("mouseenter", function () {
+    //     $(this)
+    //         .children(".box_sz")
+    //         .stop()
+    //         .animate({ top: "52%", left: "15px" }, 500);
+    //     $(this)
+    //         .children(".p4_box")
+    //         .stop()
+    //         .animate({ top: "-85px", left: "15px" }, 500);
+    // });
+    // $(".comein").on("mouseleave", function () {
+    //     $(this)
+    //         .children(".box_sz")
+    //         .stop()
+    //         .animate({ top: "50%", left: "0px" }, 500);
+    //     $(this)
+    //         .children(".p4_box")
+    //         .stop()
+    //         .animate({ top: "-100px", left: "0px" }, 500);
+    // });
 
     //일러스트 이미지 크게 보이는 팝업
     $(".small li").on("click", function () {
