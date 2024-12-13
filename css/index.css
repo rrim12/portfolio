@@ -1365,7 +1365,7 @@ body {
         z-index: 2;
     }
     .big_wrap {
-        width: 354px;
+        width: 400px;
         height: 500px;
         display: flex;
         position: absolute;
@@ -3114,7 +3114,7 @@ body {
         z-index: 2;
     }
     .big_wrap {
-        width: 495px;
+        width: 550px;
         height: 700px;
         display: flex;
         position: absolute;
@@ -4868,7 +4868,7 @@ body {
         z-index: 2;
     }
     .big_wrap {
-        width: 601px;
+        width: 650px;
         height: 850px;
         display: flex;
         position: absolute;
