@@ -125,13 +125,14 @@ body {
         transform: translateX(-50%);
     }
     .navi li {
+        color: #fff;
         margin-bottom: 12px;
         position: relative;
         cursor: pointer;
         transition: 2s;
     }
     .navi li span {
-        color: #222;
+        color: #fff;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
@@ -167,7 +168,7 @@ body {
         transition: 2s;
     }
     .navi li .on {
-        color: #222;
+        color: #fff;
         opacity: 1;
         transition: 1s;
         left: 50%;
@@ -184,6 +185,7 @@ body {
     section {
         width: 100%;
         position: relative;
+        background-color: #2c1d00;
     }
     .page1 {
         width: 100vw;
@@ -394,7 +396,6 @@ body {
     } */
     /* 이력소개 about*/
     .page2 {
-        background-color: #fff2db;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -448,6 +449,7 @@ body {
     .resume {
         font-family: "GmarketSansMedium";
         opacity: 1;
+        color: #fff;
     }
     /* 제이쿼리 움직임 */
     /* .resu_mov {
@@ -1083,7 +1085,8 @@ body {
         width: 70px;
         height: 70px;
         text-align: center;
-        background-color: #fff2db;
+        background-color: #2c1d00;
+        color: #fff;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -1104,7 +1107,6 @@ body {
 
     /* 홈페이지1 */
     .page3 {
-        background-color: #ddebff;
         height: 1300px;
         padding: 50px;
         padding-top: 95px;
@@ -1172,6 +1174,7 @@ body {
         transform: translateX(-50%);
         top: 350px;
         display: inline-block;
+        color: #fff;
     }
     .hm {
         font-family: "GmarketSansMedium";
@@ -1286,7 +1289,7 @@ body {
         top: 0px;
         transition: transform 0.3s;
         transition-delay: calc(40ms * var(--char-index));
-        color: black;
+        color: #fff;
         opacity: 0.5;
     }
 
@@ -1306,7 +1309,6 @@ body {
     /* 홈페이지2 */
     .page4 {
         height: 1300px;
-        background-color: #fff2db;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -1329,7 +1331,6 @@ body {
     /* 홈페이지3 */
     .page5 {
         height: 1300px;
-        background-color: #ddebff;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -1338,7 +1339,6 @@ body {
     /* 일러스트 */
     .page6 {
         height: 1000px;
-        background-color: #fff2db;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -1461,7 +1461,6 @@ body {
     /* 애니메이션 */
     .page7 {
         height: 1000px;
-        background-color: #ddebff;
         padding: 50px;
         padding-top: 95px;
         box-sizing: border-box;
@@ -1513,6 +1512,7 @@ body {
         opacity: 1;
         display: flex;
         gap: 15px;
+        color: #fff;
     }
     .p7_txt > li {
         width: 100%;
@@ -1544,7 +1544,7 @@ body {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #789cd6;
         display: block;
         position: absolute;
         top: -10px;
@@ -1653,6 +1653,7 @@ body {
         margin: 0px auto;
         margin-top: -90px;
         word-break: keep-all;
+        color: #fff;
     }
     .txt_1,
     .txt_2 {
@@ -1669,6 +1670,7 @@ body {
     }
     .contact_txt p span {
         display: inline-block;
+        color: #222;
     }
     .contact_txt p > span {
         width: 45px;
@@ -1841,7 +1843,7 @@ body {
         position: relative;
     }
     .menu_txt {
-        color: #a6cbff;
+        color: #fff;
         position: absolute;
         top: 50%;
         transform: translateY(-80%);
@@ -1882,9 +1884,10 @@ body {
         position: relative;
         cursor: pointer;
         transition: 2s;
+        color: #fff;
     }
     .navi li span {
-        color: #222;
+        color: #fff;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
@@ -1920,13 +1923,13 @@ body {
         transition: 2s;
     }
     .navi li .on {
-        color: #222;
+        color: #fff;
         opacity: 1;
         transition: 1s;
         right: 40px;
     }
     .navi li .txt_on {
-        color: #222;
+        color: #fff;
         opacity: 1;
         transition: 1s;
         right: 40px;
@@ -1943,6 +1946,7 @@ body {
     section {
         width: 100%;
         position: relative;
+        background-color: #2c1d00;
     }
     .page1 {
         height: 1000px;
@@ -2151,7 +2155,6 @@ body {
     }
     /* 이력소개 about*/
     .page2 {
-        background-color: #fff2db;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -2205,6 +2208,7 @@ body {
         opacity: 0;
         transform: translateX(100px);
         transition: 1s;
+        color: #fff;
     }
     /* 제이쿼리 움직임 */
     .resu_mov {
@@ -2842,7 +2846,8 @@ body {
         width: 90px;
         height: 90px;
         text-align: center;
-        background-color: #fff2db;
+        color: #fff;
+        background-color: #2c1d00;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -2857,7 +2862,6 @@ body {
 
     /* 홈페이지1 */
     .page3 {
-        background-color: #ddebff;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -2923,6 +2927,7 @@ body {
         right: 20px;
         top: 350px;
         display: inline-block;
+        color: #fff;
     }
     .hm {
         font-family: "GmarketSansMedium";
@@ -3038,7 +3043,7 @@ body {
         top: 0px;
         transition: transform 0.3s;
         transition-delay: calc(40ms * var(--char-index));
-        color: black;
+        color: #fff;
         opacity: 0.5;
     }
 
@@ -3057,7 +3062,6 @@ body {
     /* ====================================== */
     /* 홈페이지2 */
     .page4 {
-        background-color: #fff2db;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -3077,7 +3081,6 @@ body {
 
     /* 홈페이지3 */
     .page5 {
-        background-color: #ddebff;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -3085,7 +3088,6 @@ body {
     /* 일러스트 */
     .page6 {
         height: 1000px;
-        background-color: #fff2db;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -3207,7 +3209,6 @@ body {
     /* 애니메이션 */
     .page7 {
         height: 1000px;
-        background-color: #ddebff;
         padding: 50px;
         box-sizing: border-box;
     }
@@ -3265,6 +3266,7 @@ body {
         transition: 1s;
         display: flex;
         gap: 40px;
+        color: #fff;
     }
     .p7_txt > li {
         width: 100%;
@@ -3296,7 +3298,7 @@ body {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #789cd6;
         display: block;
         position: absolute;
         top: -10px;
@@ -3326,7 +3328,6 @@ body {
         height: 1000px;
         padding: 50px;
         box-sizing: border-box;
-        /* background-color: #fff2db; */
     }
 
     .p8_wrap {
@@ -3409,6 +3410,7 @@ body {
     }
     .contact_txt {
         text-align: center;
+        color: #fff;
     }
     .txt_1,
     .txt_2 {
@@ -3430,6 +3432,7 @@ body {
     }
     .contact_txt p span {
         display: inline-block;
+        color: #222;
     }
     .contact_txt p > span {
         width: 45px;
@@ -3570,7 +3573,7 @@ body {
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        border-bottom: 1px solid #ddd;
+        /* border-bottom: 1px solid #ddd; */
         box-sizing: border-box;
         padding-bottom: 10px;
     }
@@ -3609,6 +3612,7 @@ body {
         transform: translateY(-80%);
         left: 0px;
         z-index: 2;
+        color: #fff;
     }
     .s_circl {
         display: block;
@@ -3640,13 +3644,14 @@ body {
         z-index: 5;
     }
     .navi li {
+        color: #fff;
         margin-bottom: 12px;
         position: relative;
         cursor: pointer;
         transition: 2s;
     }
     .navi li span {
-        color: #222;
+        color: #fff;
         font-size: 14px;
         font-weight: 900;
         position: absolute;
@@ -3682,13 +3687,13 @@ body {
         transition: 2s;
     }
     .navi li .on {
-        color: #222;
+        color: #fff;
         opacity: 1;
         transition: 1s;
         right: 40px;
     }
     .navi li .txt_on {
-        color: #222;
+        color: #fff;
         opacity: 1;
         transition: 1s;
         right: 40px;
@@ -3708,6 +3713,7 @@ body {
     }
     .page1 {
         height: 1200px;
+        background-color: #2c1d00;
     }
     /* visual */
     .p_box {
@@ -3914,7 +3920,7 @@ body {
     /* 이력소개 about*/
     .page2 {
         height: 1200px;
-        background-color: #fff2db;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
     }
@@ -3967,6 +3973,7 @@ body {
         opacity: 0;
         transform: translateX(300px);
         transition: 0.8s;
+        color: #fff;
     }
     /* 제이쿼리 움직임 */
     .resu_mov {
@@ -4603,7 +4610,8 @@ body {
         width: 90px;
         height: 90px;
         text-align: center;
-        background-color: #fff2db;
+        background-color: #2c1d00;
+        color: #fff;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -4619,7 +4627,7 @@ body {
     /* 홈페이지1 */
     .page3 {
         height: 1200px;
-        background-color: #ddebff;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
     }
@@ -4691,6 +4699,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
         transition: 1s;
+        color: #fff;
     }
     .descript {
         text-align: left;
@@ -4704,6 +4713,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
         transition: 1s;
+        color: #fff;
     }
     /* 기획서 홈페이지 링크버튼 */
     .more_butt {
@@ -4792,7 +4802,7 @@ body {
         top: 0px;
         transition: transform 0.3s;
         transition-delay: calc(40ms * var(--char-index));
-        color: black;
+        color: #fff;
         opacity: 0.5;
     }
 
@@ -4812,7 +4822,7 @@ body {
     /* 홈페이지2 */
     .page4 {
         height: 1200px;
-        background-color: #fff2db;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
     }
@@ -4835,12 +4845,13 @@ body {
         background-color: #ddebff;
         padding: 60px;
         box-sizing: border-box;
+        background-color: #2c1d00;
     }
 
     /* 일러스트 */
     .page6 {
         height: 1200px;
-        background-color: #fff2db;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
     }
@@ -4961,7 +4972,7 @@ body {
     /* 애니메이션 */
     .page7 {
         height: 1200px;
-        background-color: #ddebff;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
     }
@@ -5045,6 +5056,7 @@ body {
         z-index: 2;
         top: 0px;
         left: 15px;
+        color: #fff;
     }
 
     /* 옆에서 들어오는 애니 */
@@ -5099,9 +5111,9 @@ body {
     /* contact */
     .page8 {
         height: 1200px;
+        background-color: #2c1d00;
         padding: 60px;
         box-sizing: border-box;
-        /* background-color: #fff2db; */
     }
     .p8_wrap {
         width: 100%;
@@ -5177,6 +5189,7 @@ body {
     }
     .contact_txt {
         text-align: center;
+        color: #fff;
     }
     .txt_1,
     .txt_2 {
@@ -5196,6 +5209,7 @@ body {
     }
     .contact_txt p span {
         display: inline-block;
+        color: #222;
     }
     .contact_txt p > span {
         width: 45px;
@@ -5204,6 +5218,7 @@ body {
         border-radius: 50%;
         background-color: #fff45c;
         margin: 0px 3px;
+        color: #222;
     }
     .contact_txt img {
         position: absolute;
