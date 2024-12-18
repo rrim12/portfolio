@@ -13,28 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: "bitbit";
-    src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
-        url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
-}
-@font-face {
-    font-family: "PFStardust";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "omyu_pretty";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
-        format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-@import url("https://fonts.googleapis.com/css?family=Satisfy");
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
-
 html {
     overflow-x: hidden;
 }
@@ -1350,12 +1328,82 @@ body {
         display: none;
     } */
 
-    /* 홈페이지3 */
+    /* 자바스크립트 */
     .page5 {
-        height: 1300px;
-        padding: 50px;
-        padding-top: 95px;
+        height: 2700px;
+        background-color: #ddebff;
+        padding: 60px;
         box-sizing: border-box;
+        background-color: #2c1d00;
+        position: relative;
+    }
+    .java_do {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .java_do > li {
+        width: 100%;
+        height: 600px;
+        color: #fff;
+        font-family: "GmarketSansMedium";
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    .java_do > li a {
+        font-family: "GmarketSansMedium";
+        color: #fff;
+    }
+    .java_do video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .java_do li p {
+        height: 58px;
+        box-sizing: border-box;
+        padding: 10px 25px;
+        margin-bottom: 25px;
+    }
+    /* 버튼 */
+    .button {
+        display: inline-block;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rebeccapurple;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-bottom: 25px;
+    }
+    .button:hover {
+        background-color: violet;
+    }
+    .button:active {
+        background-color: violet;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .butt2 {
+        background-color: palevioletred;
+    }
+    .butt2:hover {
+        background-color: plum;
+    }
+    .butt2:active {
+        background-color: plum;
     }
 
     /* 일러스트 */
@@ -3101,10 +3149,91 @@ body {
         z-index: 1;
     } */
 
-    /* 홈페이지3 */
+    /* 자바스크립트 */
     .page5 {
-        padding: 50px;
+        height: 1800px;
+        background-color: #ddebff;
+        padding: 60px;
         box-sizing: border-box;
+        background-color: #2c1d00;
+        position: relative;
+    }
+    .java_do {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .java_do > li {
+        width: calc(100% / 2);
+        height: 600px;
+        color: #fff;
+        font-family: "GmarketSansMedium";
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 150px;
+        opacity: 0;
+        transform: translateX(2000px);
+        transition: 1s;
+    }
+    /* 제이쿼리 */
+    .java_do .box_toL{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+    .java_do > li a {
+        font-family: "GmarketSansMedium";
+        color: #fff;
+    }
+    .java_do video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .java_do li p {
+        height: 58px;
+        box-sizing: border-box;
+        padding: 10px 25px;
+        margin-bottom: 25px;
+    }
+    /* 버튼 */
+    .button {
+        display: inline-block;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rebeccapurple;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-bottom: 25px;
+    }
+    .button:hover {
+        background-color: violet;
+    }
+    .button:active {
+        background-color: violet;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .butt2 {
+        background-color: palevioletred;
+    }
+    .butt2:hover {
+        background-color: plum;
+    }
+    .butt2:active {
+        background-color: plum;
     }
 
     /* 일러스트 */
@@ -4871,21 +5000,80 @@ body {
         position: relative;
     }
     .java_do {
-        width: 100%;
+        width: 90%;
         display: flex;
+        gap: 30px;
         position: absolute;
         top: 50%;
-        transform: translateY(-60%);
+        transform: translateY(-68%);
     }
-    .java_do > li {
+    .java_do > li{
+        width: calc(100% / 3);
         height: 600px;
+        color: #fff;
+        font-family: "GmarketSansMedium";
+        font-size: 25px;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(2000px);
+        transition: 1s;
     }
-    .java_do > li:nth-child(1) {
-        width: 512px;
+    /* 제이쿼리 */
+    .java_do .box_toL{
+        opacity: 1;
+        transform: translateX(0px);
     }
-    /* 숫자맞추기게임 */
-    /* To do List */
-    /* 날씨 api */
+    .java_do > li a {
+        font-family: "GmarketSansMedium";
+        color: #fff;
+    }
+    .java_do video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .java_do li p {
+        height: 58px;
+        box-sizing: border-box;
+        padding: 10px 25px;
+        margin-bottom: 25px;
+    }
+    /* 버튼 */
+    .button {
+        display: inline-block;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rebeccapurple;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-bottom: 25px;
+    }
+    .button:hover {
+        background-color: violet;
+    }
+    .button:active {
+        background-color: violet;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .butt2 {
+        background-color: palevioletred;
+    }
+    .butt2:hover {
+        background-color: plum;
+    }
+    .butt2:active {
+        background-color: plum;
+    }
+
     /* 일러스트 */
     .page6 {
         height: 1200px;

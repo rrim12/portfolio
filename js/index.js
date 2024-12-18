@@ -210,31 +210,23 @@ $(function () {
             $(".navi li").eq(4).children("span").stop().addClass("on");
             $(".navi li").eq(4).children("div").stop().addClass("col_on");
 
-            //홈페이지3
+            //자바스크립트 모음집
             setTimeout(function () {
                 //타이틀
                 $(".page5 .p_titl").stop().addClass("up_act");
             }, 100);
             setTimeout(function () {
-                //목업
-                $(".page5 .mock").stop().addClass("go_up");
+                //옆으로 슬라이드해서 들어오기1
+                $(".java_do > li").eq(0).stop().addClass("box_toL");
             }, 600);
             setTimeout(function () {
-                //홈피제목
-                $(".page5 .hm").stop().addClass("go_up");
+                //옆으로 슬라이드해서 들어오기2
+                $(".java_do > li").eq(1).stop().addClass("box_toL");
             }, 850);
             setTimeout(function () {
-                //내용설명
-                $(".page5 .descript").stop().addClass("go_up");
+                //옆으로 슬라이드해서 들어오기3
+                $(".java_do > li").eq(2).stop().addClass("box_toL");
             }, 1200);
-            setTimeout(function () {
-                //버튼두개
-                $(".page5 .more_butt").stop().addClass("go_up");
-            }, 1600);
-            setTimeout(function () {
-                //오른쪽 홈페이지 옆에서 들어오게
-                $(".page5 .comein").stop().addClass("comes");
-            }, 1800);
         } else if (point >= con6 && point < con7) {
             erase();
             $(".navi li").eq(5).children("span").stop().addClass("on");
